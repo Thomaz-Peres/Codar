@@ -1,6 +1,39 @@
-<body>
-  <app-nav-menu></app-nav-menu>
-  <div class="container">
-    <router-outlet></router-outlet>
-  </div>
+<body>    
+    <nav>
+        <div class = "nav-bar">
+            <h1>{{ title }}</h1>
+            <ul>
+                <li>Inicio</li>
+                <li>Serviços</li>
+                <li>Contato</li>
+                <button>Login</button>
+            </ul>
+        </div>
+
+        <div class = "header">
+            <img src="./assets/video_call.png" alt="Chamada video" class = "imagem-inicial">
+            <p>Alavanque seu negocio com um</p>
+            <p class = "bonito">Website incrivel</p>
+            <button class="orçamento">Solicitar orçamento</button>
+        </div>
+    </nav>
+
+    <section>
+        <div class = "menu-secundario">
+            <ul>
+                <li>Domínio personalizado</li>
+                <li>Hospedagem</li>
+                <li>Site responsivo</li>
+                <li>Redes sociais</li>
+                <li>Chat online</li>
+                <li>Blog integrado</li>
+            </ul>
+
+            <img src="./assets/coding_.png" alt="Coding" class = "imagem-dois">
+
+            <p>Nossa equipe está à disposição!</p>
+            <input type="text" placeholder="Celular (11)95332-4351">
+            <button class = "ligar">Ligamos para você</button>
+        </div>
+    </section>
 </body>

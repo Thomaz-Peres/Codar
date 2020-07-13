@@ -1,65 +1,249 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0;
-
-    margin: auto 30px;
-
-    flex-wrap: wrap;
+button {
+  border: 0;
 }
 
-nav p {
-    font-weight: bold;
-    font-size: 1.5rem;
+header nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+
+  margin: 10px 30px;
+
+  flex-wrap: wrap;
 }
 
-nav ul {
-    display: flex;
+header nav h1 {
+  color: #D6000D;
 }
 
-nav ul li {
-    margin: 10px 15px;
-    font-size: 1rem;
+header nav ul {
+  display: flex;
 }
 
-nav ul button {
-    height: 30px;
-    width: 110px;
-    font-size: 15px;
-
-    margin-top: 5px;
-
-    font-weight: bold;
-    color: aliceblue;
-    background: #D6000D;
-
-    border: 0;
-    border-radius: 8px;
+header nav ul li {
+  margin: 13px 15px;
+  font-size: 1rem;
 }
+
+header nav ul button {
+  height: 30px;
+  width: 110px;
+  font-size: 15px;
+
+  margin-top: 8px;
+
+  font-weight: bold;
+  color: aliceblue;
+  background: #D6000D;
+
+  border-radius: 8px;
+  transition: .7s;
+}
+
+header nav ul button:hover {
+    border: 2px solid #D6000D;
+    background: white;
+    color: black;
+}
+
 
 .header {
-    width: 1200px;
+  height: 50vh;
+  margin: 50px;
 }
 
-.header img {
-    float: left;
-    width: 350px;
-    height: 300px;
+.header .header-image {
+  float: left;
+  width: auto;
+  height: 400px;
+  padding-left: 170px;
 }
 
-.header-content {
-    width: 500px;
-    margin: auto;
+.header .header-content {
+  margin: auto;
+  text-align: center;
+  padding: 40px 60px 0 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+  flex-wrap: wrap;
 }
 
 .header-content p {
+  padding-right: 48px;
+}
+
+.header-content h1 {
+  color: #D6000D;
+}
+
+.header button {
+  margin: 50px 80px 0 0;
+  background: #D6000D;
+  color: white;
+  font-weight: bold;
+
+  height: 30px;
+  width: 220px;
+
+  border-radius: 8px;
+  transition: .7s;
+}
+
+.header button:hover {
+    border: 2px solid #D6000D;
+    background: white;
+    color: black;
+}
+
+.secao2 {
+  height: 50vh;
+  margin: 50px;
+}
+
+.secao2 img {
+  float: right;
+  width: auto;
+  height: 400px;
+  padding-right: 170px;
+}
+
+.secao2 .secao2-content {
+  margin: auto;
+  padding: 60px 0 0 200px;
+  font-weight: bold;
+  font-size: 1.2rem;
+
+  margin-bottom: 10px;
+}
+
+.secao2 .secao2-content i {
+  padding-right: 20px;
+  color: #D6000D;
+}
+
+.secao2 .secao2-contato {
+  padding: 100px 0 0 200px;
+}
+
+.secao2 .secao2-contato h5 {
+  font-weight: bold;
+}
+
+.secao2 .secao2-contato button {
+  border-radius: 8px;
+  border: 0;
+  margin-left: 15px;
+  font-weight: bold;
+
+  background: #D6000D;
+  color: white;
+
+  height: 40px;
+  width: 220px;
+
+  transition: .7s;
+}
+
+.secao2 .secao2-contato button:hover {
+    border: 2px solid #D6000D;
+    background: white;
+    color: black;
+}
+
+.secao2 .secao2-contato input {
+  border-radius: 8px;
+  border: 0;
+
+  background: #d8d8d8;
+
+  height: 40px;
+  width: 200px;
+}
+
+.feedbacks {
+  margin: auto;
+  display: flex;
+}
+
+.foto {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 30px 0 0 10px;
+  background: #D6000D;
+  position: absolute;
+}
+
+.feedbacks .card {
+  width: 550px;
+  height: 180px;
+
+  background: #d8d8d8;
+
+  margin: 70px 10px 0 250px;
+  border: 0;
+  border-radius: 10px;
+}
+
+.feedbacks .texto {
     display: flex;
+    flex-direction: column;
+    margin: 40px 0 0 100px;
+    flex-wrap: wrap;
+}
+
+.foot {
+    height: 300px;
+    background: black;
+    color: white;
+
+    display: flex;
+    margin-top: 50px;
+}
+
+.foot .foot-content {
+    display: flex;
+    margin: 50px 0 0 20%;
+    padding: 30px 0 0 0;
+}
+
+.foot-content .foot-codar {
+    height: auto;
+    margin-right: 100px;
+}
+
+.foot-content .foot-sobre {
+    height: auto;
+    margin-right: 100px;
+}
+
+.foot-content .foot-contato {
+    height: auto;
+    margin-right: 100px;
+}
+
+.foot-content .foot-sociais {
+    height: auto;
+    margin-right: 100px;
+}
+
+#icones {
+    font-size: 1.7rem;
+    margin: 10px;
+    color: #D6000D;
+
+    transition: .8s;
+}
+
+#icones:hover {
+    transform: scale(1.5);
+    color: aliceblue;
 }
